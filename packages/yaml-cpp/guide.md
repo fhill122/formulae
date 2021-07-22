@@ -9,7 +9,7 @@ cd build
 
 cmake -DYAML_CPP_BUILD_TESTS=off -DCMAKE_BUILD_TYPE=Release ..
 
-# or with custom compiler
+# or with custom compiler and pic
 
 CFLAGS=-fPIC CXXFLAGS=-fPIC cmake -DCMAKE_C_COMPILER=aarch64-gcc -DCMAKE_CXX_COMPILER=aarch64-g++ -DYAML_CPP_BUILD_TESTS=off -DCMAKE_BUILD_TYPE=Release ..
 
